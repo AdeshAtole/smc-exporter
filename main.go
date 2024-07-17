@@ -46,7 +46,7 @@ var (
 		nil)
 )
 
-var TEMPERATURE_KEYS = []string{"TAOL", "TB0T", "TB1T",:q "TB2T", "TCDX", "TCHP", "TCMb", "TCMz", "TD00", "TD01", "TD02", "TD03", "TD04", "TD10", "TD11", "TD12", "TD13", "TD14", "TD20", "TD21", "TD22", "TD23", "TD24", "TDBP", "TDEL", "TDER", "TDTC", "TDTP", "TDVx", "TDeL", "TDeR", "TED0", "TED1", "TFD0", "TFD1", "TG0B", "TG0C", "TG0H", "TG0V", "TG1B", "TG2B", "TH0a", "TH0b", "TH0x", "TMVR", "TPD0", "TPD1", "TPD2", "TPD3", "TPD4", "TPD5", "TPD6", "TPD7", "TPD8", "TPD9", "TPDX", "TPDa", "TPDb", "TPDc", "TPDd", "TPDe", "TPDf", "TPMP", "TPSP", "TR0Z", "TR1d", "TR2d", "TRD0", "TRD1", "TRD2", "TRD3", "TRD4", "TRD5", "TRD6", "TRD7", "TRD8", "TRD9", "TRDX", "TRDa", "TRDb", "TRDc", "TRDd", "TRDe", "TRDf", "TS0P", "TSCP", "TSG1", "TSG2", "TVA0", "TVD0", "TVH2", "TVH3", "TVHC", "TVHD", "TVHE", "TVHF", "TVHG", "TVHH", "TVHO", "TVMD", "TVS0", "TVS1", "TVS2", "TVS3", "TVSx", "TW0P", "Ta04", "Ta05", "Ta08", "Ta09", "Ta0C", "Ta0D", "Ta0G", "Ta0H", "Ta0K", "Ta0L", "TaLP", "TaLT", "TaLW", "TaRF", "TaRT", "TaRW", "TaTP", "Te04", "Te05", "Te06", "Te0G", "Te0H", "Te0I", "Te0P", "Te0Q", "Te0R", "Te0S", "Te0T", "Te0U", "Te0V", "Tf10", "Tf11", "Tf12", "Tf14", "Tf15", "Tf16", "Tf18", "Tf19", "Tf1A", "Tf1C", "Tf1D", "Tf1E", "Tf20", "Tf21", "Tf22", "Tf24", "Tf25", "Tf26", "Tf28", "Tf29", "Tf2C", "Tf2D", "Tf2E", "Tg00", "Tg01", "Tg04", "Tg05", "Tg0C", "Tg0D", "Tg0K", "Tg0L", "Tg0U", "Tg0V", "Tg0u", "Tg0v", "Tg12", "Tg13", "Tg1A", "Tg1B", "Tg1k", "Tg1l", "Th00", "Th01", "Th02", "Th04", "Th05", "Th06", "Th08", "Th09", "Th0A", "Th0C", "Th0D", "Th0E", "Tp04", "Tp05", "Tp06", "Tp0C", "Tp0D", "Tp0E", "Tp0K", "Tp0L", "Tp0M", "Tp0R", "Tp0S", "Tp0T", "Tp0U", "Tp0V", "Tp0W", "Tp0a", "Tp0b", "Tp0c", "Tp0g", "Tp0h", "Tp0i", "Tp0m", "Tp0n", "Tp0o", "Tp0u", "Tp0v", "Tp0w", "Tp0y", "Tp0z", "Tp10", "Tp16", "Tp17", "Tp18", "Tp1E", "Tp1F", "Tp1G", "Tp1I", "Tp1J", "Tp1K", "Tp1Q", "Tp1R", "Tp1S", "Tp3O", "Tp3P", "Tp3S", "Tp3T", "Tp3W", "Tp3X", "Ts00", "Ts01", "Ts02", "Ts0C", "Ts0D", "Ts0E", "Ts0K", "Ts0L", "Ts0M", "Ts0P", "Ts0Y", "Ts0Z", "Ts0a", "Ts0h", "Ts0i", "Ts1P", "Tz11", "Tz12", "Tz13", "Tz14", "Tz15", "Tz16", "Tz17", "Tz18", "Tz1j"}
+var TEMPERATURE_KEYS = []string{"TAOL", "TB0T", "TB1T", "TB2T", "TCDX", "TCHP", "TCMb", "TCMz", "TD00", "TD01", "TD02", "TD03", "TD04", "TD10", "TD11", "TD12", "TD13", "TD14", "TD20", "TD21", "TD22", "TD23", "TD24", "TDBP", "TDEL", "TDER", "TDTC", "TDTP", "TDVx", "TDeL", "TDeR", "TED0", "TED1", "TFD0", "TFD1", "TG0B", "TG0C", "TG0H", "TG0V", "TG1B", "TG2B", "TH0a", "TH0b", "TH0x", "TMVR", "TPD0", "TPD1", "TPD2", "TPD3", "TPD4", "TPD5", "TPD6", "TPD7", "TPD8", "TPD9", "TPDX", "TPDa", "TPDb", "TPDc", "TPDd", "TPDe", "TPDf", "TPMP", "TPSP", "TR0Z", "TR1d", "TR2d", "TRD0", "TRD1", "TRD2", "TRD3", "TRD4", "TRD5", "TRD6", "TRD7", "TRD8", "TRD9", "TRDX", "TRDa", "TRDb", "TRDc", "TRDd", "TRDe", "TRDf", "TS0P", "TSCP", "TSG1", "TSG2", "TVA0", "TVD0", "TVH2", "TVH3", "TVHC", "TVHD", "TVHE", "TVHF", "TVHG", "TVHH", "TVHO", "TVMD", "TVS0", "TVS1", "TVS2", "TVS3", "TVSx", "TW0P", "Ta04", "Ta05", "Ta08", "Ta09", "Ta0C", "Ta0D", "Ta0G", "Ta0H", "Ta0K", "Ta0L", "TaLP", "TaLT", "TaLW", "TaRF", "TaRT", "TaRW", "TaTP", "Te04", "Te05", "Te06", "Te0G", "Te0H", "Te0I", "Te0P", "Te0Q", "Te0R", "Te0S", "Te0T", "Te0U", "Te0V", "Tf10", "Tf11", "Tf12", "Tf14", "Tf15", "Tf16", "Tf18", "Tf19", "Tf1A", "Tf1C", "Tf1D", "Tf1E", "Tf20", "Tf21", "Tf22", "Tf24", "Tf25", "Tf26", "Tf28", "Tf29", "Tf2C", "Tf2D", "Tf2E", "Tg00", "Tg01", "Tg04", "Tg05", "Tg0C", "Tg0D", "Tg0K", "Tg0L", "Tg0U", "Tg0V", "Tg0u", "Tg0v", "Tg12", "Tg13", "Tg1A", "Tg1B", "Tg1k", "Tg1l", "Th00", "Th01", "Th02", "Th04", "Th05", "Th06", "Th08", "Th09", "Th0A", "Th0C", "Th0D", "Th0E", "Tp04", "Tp05", "Tp06", "Tp0C", "Tp0D", "Tp0E", "Tp0K", "Tp0L", "Tp0M", "Tp0R", "Tp0S", "Tp0T", "Tp0U", "Tp0V", "Tp0W", "Tp0a", "Tp0b", "Tp0c", "Tp0g", "Tp0h", "Tp0i", "Tp0m", "Tp0n", "Tp0o", "Tp0u", "Tp0v", "Tp0w", "Tp0y", "Tp0z", "Tp10", "Tp16", "Tp17", "Tp18", "Tp1E", "Tp1F", "Tp1G", "Tp1I", "Tp1J", "Tp1K", "Tp1Q", "Tp1R", "Tp1S", "Tp3O", "Tp3P", "Tp3S", "Tp3T", "Tp3W", "Tp3X", "Ts00", "Ts01", "Ts02", "Ts0C", "Ts0D", "Ts0E", "Ts0K", "Ts0L", "Ts0M", "Ts0P", "Ts0Y", "Ts0Z", "Ts0a", "Ts0h", "Ts0i", "Ts1P", "Tz11", "Tz12", "Tz13", "Tz14", "Tz15", "Tz16", "Tz17", "Tz18", "Tz1j"}
 
 var TEMPERATURE_DESC = make(map[string]*prometheus.Desc)
 
@@ -98,33 +98,14 @@ func readSMCValue(connection uint, key string) (float64, error) {
 		return 0, fmt.Errorf("failed to read SMC key %s: %d", key, result)
 	}
 
-	//    case UI8 = "ui8 "
-	//    case UI16 = "ui16"
-	//    case UI32 = "ui32"
-	//    case SP1E = "sp1e"
-	//    case SP3C = "sp3c"
-	//    case SP4B = "sp5b"
-	//    case SP5A = "sp5a"
-	//    case SP69 = "sp669"
-	//    case SP78 = "sp78"
-	//    case SP87 = "sp87"
-	//    case SP96 = "sp96"
-	//    case SPB4 = "spb4"
-	//    case SPF0 = "spf0"
-	//    case FLT = "flt "
-	//    case FPE2 = "fpe2"
-	//    case FP2E = "fp2e"
-	//    case FDS = "{fds"
+	// ref https://github.com/exelban/stats/blob/v2.11.2/SMC/smc.swift#L211 for parsing the data
 
 	var floatValue float64
 	var dataType = strings.TrimSpace(string(value.DataType[0:4]))
-	//println(key + " of data type " + dataType)
 
 	switch dataType {
 	case gosmc.TypeFLT:
 		floatValue = float64(*(*float32)(unsafe.Pointer(&value.Bytes[0])))
-	//case 8:
-	//	floatValue = *(*float64)(unsafe.Pointer(&value.Bytes[0]))
 	case gosmc.TypeUI8:
 		floatValue = float64(*(*uint8)(unsafe.Pointer(&value.Bytes[0])))
 	default:
@@ -135,7 +116,6 @@ func readSMCValue(connection uint, key string) (float64, error) {
 }
 
 func (l *FanCollector) Collect(ch chan<- prometheus.Metric) {
-	//defer gosmc.SMCClose(l.connection)
 
 	fanCountValue, err := readSMCValue(l.connection, "FNum")
 	if err != nil {
@@ -189,16 +169,6 @@ func (l *TemperatureCollector) Collect(ch chan<- prometheus.Metric) {
 	}
 
 }
-
-//func testTemperature(connection uint) {
-//	tempKeys := []string{"TAOL", "TB0T", "TB1T", "TB2T", "TCDX", "TCHP", "TCMb", "TCMz", "TD00", "TD01", "TD02", "TD03", "TD04", "TD10", "TD11", "TD12", "TD13", "TD14", "TD20", "TD21", "TD22", "TD23", "TD24", "TDBP", "TDEL", "TDER", "TDTC", "TDTP", "TDVx", "TDeL", "TDeR", "TED0", "TED1", "TFD0", "TFD1", "TG0B", "TG0C", "TG0H", "TG0V", "TG1B", "TG2B", "TH0a", "TH0b", "TH0x", "TMVR", "TPD0", "TPD1", "TPD2", "TPD3", "TPD4", "TPD5", "TPD6", "TPD7", "TPD8", "TPD9", "TPDX", "TPDa", "TPDb", "TPDc", "TPDd", "TPDe", "TPDf", "TPMP", "TPSP", "TR0Z", "TR1d", "TR2d", "TRD0", "TRD1", "TRD2", "TRD3", "TRD4", "TRD5", "TRD6", "TRD7", "TRD8", "TRD9", "TRDX", "TRDa", "TRDb", "TRDc", "TRDd", "TRDe", "TRDf", "TS0P", "TSCP", "TSG1", "TSG2", "TVA0", "TVD0", "TVH2", "TVH3", "TVHC", "TVHD", "TVHE", "TVHF", "TVHG", "TVHH", "TVHO", "TVMD", "TVS0", "TVS1", "TVS2", "TVS3", "TVSx", "TW0P", "Ta04", "Ta05", "Ta08", "Ta09", "Ta0C", "Ta0D", "Ta0G", "Ta0H", "Ta0K", "Ta0L", "TaLP", "TaLT", "TaLW", "TaRF", "TaRT", "TaRW", "TaTP", "Te04", "Te05", "Te06", "Te0G", "Te0H", "Te0I", "Te0P", "Te0Q", "Te0R", "Te0S", "Te0T", "Te0U", "Te0V", "Tf10", "Tf11", "Tf12", "Tf14", "Tf15", "Tf16", "Tf18", "Tf19", "Tf1A", "Tf1C", "Tf1D", "Tf1E", "Tf20", "Tf21", "Tf22", "Tf24", "Tf25", "Tf26", "Tf28", "Tf29", "Tf2C", "Tf2D", "Tf2E", "Tg00", "Tg01", "Tg04", "Tg05", "Tg0C", "Tg0D", "Tg0K", "Tg0L", "Tg0U", "Tg0V", "Tg0u", "Tg0v", "Tg12", "Tg13", "Tg1A", "Tg1B", "Tg1k", "Tg1l", "Th00", "Th01", "Th02", "Th04", "Th05", "Th06", "Th08", "Th09", "Th0A", "Th0C", "Th0D", "Th0E", "Tp04", "Tp05", "Tp06", "Tp0C", "Tp0D", "Tp0E", "Tp0K", "Tp0L", "Tp0M", "Tp0R", "Tp0S", "Tp0T", "Tp0U", "Tp0V", "Tp0W", "Tp0a", "Tp0b", "Tp0c", "Tp0g", "Tp0h", "Tp0i", "Tp0m", "Tp0n", "Tp0o", "Tp0u", "Tp0v", "Tp0w", "Tp0y", "Tp0z", "Tp10", "Tp16", "Tp17", "Tp18", "Tp1E", "Tp1F", "Tp1G", "Tp1I", "Tp1J", "Tp1K", "Tp1Q", "Tp1R", "Tp1S", "Tp3O", "Tp3P", "Tp3S", "Tp3T", "Tp3W", "Tp3X", "Ts00", "Ts01", "Ts02", "Ts0C", "Ts0D", "Ts0E", "Ts0K", "Ts0L", "Ts0M", "Ts0P", "Ts0Y", "Ts0Z", "Ts0a", "Ts0h", "Ts0i", "Ts1P", "Tz11", "Tz12", "Tz13", "Tz14", "Tz15", "Tz16", "Tz17", "Tz18", "Tz1j"}
-//	for _, key := range tempKeys {
-//		_, err := readSMCValue(connection, key)
-//		if err != nil {
-//			log.Printf("%v", err)
-//		}
-//	}
-//}
 
 func main() {
 	var (
