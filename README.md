@@ -3,6 +3,8 @@
 
 This Prometheus exporter exposes metrics from the System Management Controller (SMC) on Apple Silicon Macs. It provides information about fan speeds and various temperature sensors.
 
+Despite the System Management Controller (SMC) hardware being exclusive to Intel Macs, the API retains the same name, and this project adheres to that convention.
+
 ## Features
 
 - Exposes fan metrics:
