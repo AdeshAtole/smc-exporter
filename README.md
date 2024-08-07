@@ -26,7 +26,7 @@ git clone https://github.com/AdeshAtole/smc-exporter.git
 
 2. Navigate to the project directory:
 ```
-cd smc-prometheus-exporter
+cd smc-exporter
 ```
 
 3. Build the exporter:
