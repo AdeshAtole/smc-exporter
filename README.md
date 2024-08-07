@@ -21,7 +21,7 @@ Despite the System Management Controller (SMC) hardware being exclusive to Intel
 
 1. Clone the repository:
 ```
-git clone https://github.com/yourusername/smc-prometheus-exporter.git
+git clone https://github.com/AdeshAtole/smc-prometheus-exporter.git
 ```
 
 2. Navigate to the project directory:
